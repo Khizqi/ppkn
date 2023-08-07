@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: rgb(28, 28, 28);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 4%;
+}
+
+.brand {
+  color: white;
+}
+
+.content-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.content-nav > li > a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.content-nav > li > a:hover {
+  color: gray;
+}
