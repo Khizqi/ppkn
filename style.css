@@ -52,6 +52,8 @@ body::-webkit-scrollbar-thumb:hover {
   list-style-type: none;
   background-color: rgba(1, 1, 1, 0.6);
   padding: 2%;
+  width: 100%;
+  justify-content: center;
 }
 
 .content-nav > li > a {
