@@ -3,20 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PPKN Web</title>
+    <title>PKN</title>
+    <link rel="icon" href="/gambar/garuda.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Animate Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Animate AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- My Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -- Nav -->
     <header>
+      <div class="brand">
+        <a>
+          <img src="gambar/garuda.png" alt="logo" />
+        </a>
+      </div>
       <nav class="navbar">
-        <div class="brand">
-          <a>Mobile<span>Legend</span></a>
-        </div>
         <ul class="content-nav">
-          <li><a href="#Yamin">Moh. Yamin</a></li>
-          <li><a href="#Soepomo">Soepomo</a></li>
           <li><a href="#Soekarno">Ir. Soekarno</a></li>
+          <li><a href="#Soepomo">Soepomo</a></li>
+          <li><a href="#Yamin">Moh. Yamin</a></li>
           <li><a href="#Hatta">Moh Hatta</a></li>
         </ul>
       </nav>
@@ -25,12 +42,170 @@
 
     <!-- welcome page -->
     <section class="welcome">
-      <div>
-        <div>
-          <img src="" alt="" />
-        </div>
+      <div class="welcome-img">
+        <img src="gambar/soekarno.jpg" alt="soekarno" />
+        <img src="gambar/soepomo.jpg" alt="soepomo" />
+        <img src="gambar/yamin.jpg" alt="yamin" />
+        <img src="gambar/hatta.jpg" alt="hatta" />
+      </div>
+      <div class="welcome-content animate__animated animate__bounceInUp">
+        <h1>Selamat Datang</h1>
+        <h1>Di Website Kami !</h1>
       </div>
     </section>
     <!-- welcome page end -->
+
+    <!-- perkenalan -->
+    <section class="perkenalan">
+      <main
+        class="perkenalan-container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+      >
+        <h1>ISI MATERI</h1>
+        <div>
+          <div class="pk-1">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+              dolore eveniet dolorum numquam fuga aspernatur quod, quaerat ipsum
+              eum tempora repudiandae illo sed dolorem accusamus delectus
+              inventore tempore error voluptatum.
+            </p>
+          </div>
+          <div class="pk-2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+              incidunt minus ipsum labore quia inventore exercitationem quidem
+              quaerat, perferendis fuga hic magni blanditiis sequi voluptas a
+              corrupti animi architecto eum!
+            </p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- perkenalan end -->
+
+    <!-- Main Content -->
+    <section class="main-content">
+      <div class="main-container">
+        <div class="satu">
+          <div>
+            <img src="./gambar/yamin.jpg" alt="yamin" data-aos="fade-left" />
+            <h1><a href="#yamin">YAMIN</a></h1>
+          </div>
+          <main class="paragraf">
+            <h3>Pengenalan Singkat Moh. Yamin</h3>
+            <p>
+              Mohammad Yamin, seorang cendekiawan dan tokoh perjuangan
+              Indonesia, memiliki peran penting dalam membangun kesadaran
+              nasional dan pergerakan kemerdekaan. Ia adalah penulis lirik
+              Indonesia Raya, lambang kebangsaan, dan kontributor utama dalam
+              perumusan teks proklamasi kemerdekaan Indonesia. Yamin juga
+              berperan dalam upaya mempertahankan integritas wilayah Indonesia
+              dan perjuangan diplomasi internasional. Dengan daya pikir yang
+              tajam dan semangat patriotisme, Yamin membantu membentuk esensi
+              kebangsaan Indonesia.
+            </p>
+          </main>
+        </div>
+        <div class="dua">
+          <main class="paragraf">
+            <h3>Pengenalan Singkat Soepomo</h3>
+            <p>
+              Dr. Mohammad Soepomo, seorang cendekiawan dan negarawan Indonesia,
+              memiliki peran yang krusial dalam pembentukan dasar hukum negara.
+              Sebagai Ketua Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan
+              Indonesia (BPUPKI), Soepomo ikut merumuskan dasar negara, termasuk
+              Pancasila sebagai pijakan ideologis. Kontribusinya juga tercermin
+              dalam penyusunan Undang-Undang Dasar 1945, yang menjadi landasan
+              konstitusi Indonesia. Pemikiran dan upayanya dalam menggambarkan
+              prinsip-prinsip nasional membantu membentuk fondasi hukum dan
+              identitas bangsa.
+            </p>
+          </main>
+          <div>
+            <img
+              src="./gambar/soepomo.jpg"
+              alt="soepomo"
+              data-aos="fade-right"
+            />
+            <h1><a href="#soepomo">SOEPOMO</a></h1>
+          </div>
+        </div>
+        <div class="tiga">
+          <div>
+            <img
+              src="./gambar/soekarno.jpg"
+              alt="soekarno"
+              data-aos="fade-left"
+            />
+            <h1><a href="#soekarno">SOEKARNO</a></h1>
+          </div>
+          <main class="paragraf">
+            <h3>Pengenalan Singkat Soekarno</h3>
+            <p>
+              Soekarno, Bapak Proklamasi dan Presiden pertama Republik
+              Indonesia, memainkan peran sentral dalam perjuangan melawan
+              penjajahan Belanda. Ia dikenal karena deklarasi kemerdekaan pada
+              1945 dan sebagai penganut ideologi nasionalisme serta Pancasila.
+              Kebijakan luar negeri melalui Politik Luar Negeri Aktif (POLA)
+              juga menjadi ciri penting dari kepemimpinannya. Soekarno membentuk
+              dasar identitas nasional Indonesia yang masih berpengaruh hingga
+              kini.
+            </p>
+          </main>
+        </div>
+        <div class="empat">
+          <main class="paragraf">
+            <h3>Pengenalan Singkat Moh. Hatta</h3>
+            <p>
+              Mohammad Hatta, sering dijuluki Bapak Proklamasi bersama Soekarno,
+              adalah tokoh kunci dalam perjuangan kemerdekaan Indonesia. Selain
+              menjadi Wakil Presiden pertama Republik Indonesia, Hatta adalah
+              seorang negarawan dan ekonom yang gigih. Ia berkontribusi besar
+              dalam perumusan dasar negara, Pancasila, serta mengemban tugas
+              diplomatik dalam mewujudkan pengakuan internasional terhadap
+              kemerdekaan Indonesia. Kecerdasan dan prinsip-prinsip Hatta turut
+              membentuk landasan kuat bagi bangsa Indonesia dalam menghadapi
+              tantangan dan membangun negara yang merdeka.
+            </p>
+          </main>
+          <div>
+            <img src="./gambar/hatta.jpg" alt="hatta" data-aos="fade-right" />
+            <h1><a href="#hatta">HATTA</a></h1>
+          </div>
+        </div>
+      </div>
+      <div class="center" id="ss" data-aos="flip-up">
+        <h4>Perumus Dasar Pancasila</h4>
+      </div>
+    </section>
+    <!-- Main Content -->
+
+    <!-- Pop Up -->
+    <section class="pop-up" id="pop-up-c">
+      <div class="pop-up-content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab
+          corporis libero tenetur temporibus magni quae cumque, quod molestias
+          quia sunt perspiciatis unde quas explicabo quos dolor corrupti ex!
+          Atque.
+        </p>
+      </div>
+      <button class="close" id="close">X</button>
+    </section>
+    <!-- Pop Up -->
+
+    <!-- Footer -->
+    <footer>
+      <div></div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
