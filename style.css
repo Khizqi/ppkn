@@ -120,16 +120,16 @@ body::-webkit-scrollbar-thumb:hover {
 }
 /* Welcome End */
 
-/* Perkenalan */
-.perkenalan {
+/* BPUPKI */
+.BPUPKI {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.perkenalan-container {
-  background-image: url(./gambar/borobudur.jpg);
+.BPUPKI-container {
+  background-image: url(./gambar/BPUPKI.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -140,41 +140,70 @@ body::-webkit-scrollbar-thumb:hover {
   border: 2px solid rgb(92, 130, 220);
 }
 
-.perkenalan-container > h1 {
+.BPUPKI-container > h1 {
   text-align: center;
-  font-size: 5vh;
+  font-size: 4vh;
   color: #fff;
   margin-bottom: 50px;
   background-color: rgb(92, 130, 220);
   padding: 0 10px;
-  transform: translateY(20%);
+  transform: translateY(50%);
 }
 
-.perkenalan-container > div {
+.one {
+  color: #fff;
+  background-color: rgba(1, 1, 1, 0.6);
+  width: 90%;
+  font-size: 3vh;
+  padding: 5px;
+}
+
+.BPUPKI-container > div {
   display: flex;
   align-items: center;
   margin: 3% 4%;
   gap: 10px;
 }
 
-.perkenalan-container > div > div {
-  background: rgba(1, 1, 1, 0.6);
+.BPUPKI-container > div > div {
   max-height: 100%;
+  width: 50%;
 }
 
-.perkenalan-container > div > div > p {
+.BPUPKI-container > div > div > h1 {
+  font-size: 3vh;
+  color: #fff;
+  display: block;
+  text-align: center;
+  background-color: rgb(92, 130, 220);
+}
+
+.BPUPKI-container > div > div > p {
   color: aliceblue;
-  font-size: 4vh;
+  font-size: 2.8vh;
+  margin: 1% 0;
+  background: rgba(1, 1, 1, 0.6);
   padding: 8px;
-  max-height: 50vh;
+  max-height: 20vh;
+  min-height: 20vh;
   overflow-y: auto;
 }
 
-/* Perkenalan End */
+.BPUPKI-container > div > div > p::-webkit-scrollbar {
+  width: 5px;
+}
+
+.BPUPKI-container > div > div > p::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+}
+
+/* BPUPKI End */
 
 /* Main */
 .main-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -188,13 +217,13 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .main-container > div > div {
-  width: 100%;
   display: inline-block;
+  align-self: center;
 }
 
 .main-container > div > div > img {
   user-select: none;
-  height: 38vh;
+  max-height: 30vh;
   border-radius: 4%;
   object-fit: cover;
 }
@@ -203,7 +232,7 @@ body::-webkit-scrollbar-thumb:hover {
   user-select: none;
   align-self: flex-end;
   margin: 0 10px;
-  font-size: 3vh;
+  font-size: 1.4vw;
   border-radius: 25px 25px 25px 25px;
   background-color: rgba(45, 61, 142, 0.995);
   margin-bottom: 5px;
@@ -233,7 +262,7 @@ body::-webkit-scrollbar-thumb:hover {
 .main-container > div > div > h1 > a {
   color: white;
   text-decoration: none;
-  font-family: Cookie;
+  font-family: Poppins, sans-serif;
 }
 
 .satu {
@@ -264,12 +293,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
 }
 
-.dua > div,
-.empat > div {
-  display: flex;
-  justify-content: end;
-}
-
 .paragraf {
   color: white;
   margin: 0 10px;
@@ -278,18 +301,20 @@ body::-webkit-scrollbar-thumb:hover {
 
 .paragraf > h3 {
   text-align: center;
-  padding: 10px 0;
+  transform: translateY(30%);
+  padding: 2% 0;
 }
 
 .paragraf > p {
   margin-top: 20px;
-  font-size: 3.5vh;
+  font-size: 1.8vw;
   overflow: auto;
   max-height: 25vh;
+  min-height: 25vh;
   padding: 10px;
   margin-bottom: 40px;
   background-color: rgba(1, 1, 1, 0.6);
-  font-family: Gochi Hand;
+  font-family: Edu SA Beginner, sans-serif;
 }
 
 .paragraf > p::-webkit-scrollbar {
@@ -302,9 +327,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .center {
   background-color: rgb(41, 54, 151);
-  width: 120px;
-  height: 120px;
-  padding: 30px;
+  width: 9%;
+  height: 16%;
+  padding: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,6 +337,7 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 20;
   clip-path: polygon(50% 0%, 100% 38%, 82% 90%, 18% 90%, 0% 38%);
   cursor: pointer;
+  margin-left: 2%;
 }
 
 .center:hover {
@@ -322,6 +348,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: aliceblue;
   user-select: none;
   text-align: center;
+  font-size: 2.2vh;
 }
 /* Main End*/
 
@@ -346,7 +373,35 @@ body::-webkit-scrollbar-thumb:hover {
 .pop-up-content {
   height: 80vh;
   width: 80%;
+  background-image: url(./gambar/vintageBackground2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 3%;
+}
+
+.pop-up-content > p {
+  font-size: 3.4vh;
+  font-weight: 600;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.pop-up-content > p::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pop-up-content > p::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.pop-up-content > p::-webkit-scrollbar-thumb:active {
+  background-color: white;
+}
+
+.pop-up-content > p::-webkit-scrollbar-button {
   background-color: #fff;
+  height: 8px;
 }
 
 .close {
@@ -361,15 +416,28 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Footer */
 footer {
-  height: 30vh;
   background-color: black;
   color: white;
   border-top: 2px solid rgb(39, 93, 164);
   margin-top: 40px;
+  padding-bottom: 20px;
 }
-/* Footer end */
 
-/* ... (kode CSS Anda yang sudah ada di sini) ... */
+footer > div {
+  display: flex;
+  gap: 10px;
+  padding: 1% 3%;
+}
+
+footer > div > p {
+  font-size: 1.6vw;
+}
+
+footer > div > p:first-child {
+  width: 80%;
+}
+
+/* Footer end */
 
 /* Responsive at 756px */
 @media screen and (max-width: 756px) {
@@ -381,13 +449,28 @@ footer {
     gap: 20px;
   }
 
-  .welcome-content > h1 {
-    font-size: 7vh;
+  .BPUPKI-container > h1 {
+    font-size: 7vw;
     padding: 0 2%;
   }
 
-  .welcome-content > h1:last-child {
-    font-size: 5vh;
+  .BPUPKI-container > p {
+    max-height: 20vh;
+    min-height: 20vh;
+    overflow-y: auto;
+  }
+
+  .BPUPKI-container > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .BPUPKI-container > div > div {
+    width: 100%;
+  }
+
+  .BPUPKI-container > div > div > h1:last-child {
+    font-size: 5vw;
   }
 
   .main-container {
@@ -406,7 +489,15 @@ footer {
   }
 
   .center {
-    display: none;
+    position: relative;
+    clip-path: none;
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 25px 25px 25px 25px;
+  }
+
+  footer > div > p {
+    font-size: 2vh;
   }
 }
 
@@ -428,6 +519,15 @@ footer {
     font-size: 4vh;
   }
 
+  .BPUPKI-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .BPUPKI-container > div {
+    width: 90%;
+  }
+
   .main-container {
     width: 100%;
     margin: 0;
@@ -442,10 +542,8 @@ footer {
     font-size: 1.5vh;
   }
 
-  .center {
-    width: 60px;
-    height: 60px;
-    padding: 5px;
+  .perkenalan > main > h1 {
+    font-size: 2vh;
   }
 
   .perkenalan > main > div {
@@ -453,7 +551,7 @@ footer {
   }
 
   .perkenalan > main > div > div > p {
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
 
   .paragraf > p {
