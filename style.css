@@ -43,6 +43,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: fixed;
   top: 0;
   margin: 10px;
+  z-index: 999;
 }
 
 .content-nav {
