@@ -503,12 +503,8 @@ footer > div > p:first-child {
 
 /* Responsive at 580px */
 @media screen and (max-width: 580px) {
-  .navbar {
-    padding: 1.5vh 1%;
-  }
-
-  .content-nav {
-    display: none;
+  .content-nav > li > a {
+    font-size: 2.5vw;
   }
 
   .welcome-content > h1 {
