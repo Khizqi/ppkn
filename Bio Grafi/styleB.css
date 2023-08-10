@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb:hover {
   flex-direction: column;
   display: inline-flex;
   border-radius: 3%;
+  z-index: 0;
 }
 
 .section > nav {
@@ -137,6 +138,19 @@ main > p {
   font-size: 1.8vw;
   width: 85%;
   padding-right: 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > p > img {
+  height: 40%;
+  width: 40%;
+  align-self: center;
+}
+
+main > p > img:hover {
+  height: 80%;
+  width: 80%;
 }
 /* Main End */
 
