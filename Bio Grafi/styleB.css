@@ -230,9 +230,11 @@ footer > div > p:first-child {
   }
 
   main > p {
-    font-size: 3vw;
+    font-size: 4vw;
     width: 100%;
     padding-right: 0;
+    padding: 0 6%;
+    padding-bottom: 5%;
   }
 
   main > p > img {
