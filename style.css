@@ -43,7 +43,6 @@ body::-webkit-scrollbar-thumb:hover {
   position: fixed;
   top: 0;
   margin: 10px;
-  z-index: 999;
 }
 
 .content-nav {
@@ -54,6 +53,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 2%;
   width: 100%;
   justify-content: center;
+  margin: 99;
 }
 
 .content-nav > li > a {
@@ -441,6 +441,10 @@ footer > div > p:first-child {
 
 /* Responsive at 756px */
 @media screen and (max-width: 756px) {
+  .brand > a > img {
+    width: auto;
+  }
+
   .navbar {
     padding: 1.5vh 2%;
   }
